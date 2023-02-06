@@ -1,0 +1,262 @@
+// .works-portfolio img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     object-position: center;
+// }
+
+// .works-portfolio--hover {
+//     display: none;
+//     text-align: center;
+//     position: absolute;
+//     top: 37%;
+//     left: 0;
+//     opacity: 0;
+//     transition: 0.8s;
+// }
+
+// .works-hover--title {
+//     font-family: 'Raleway';
+//     font-weight: 900;
+//     font-size: $_24px;
+//     line-height: 28px;
+//     text-align: center;
+//     text-transform: uppercase;
+//     color: $white;
+//     margin-bottom: 37px;
+// }
+
+// .works-hover--text {
+//     font-family: 'Raleway';
+//     font-weight: 400;
+//     font-size: $_18px;
+//     line-height: 21px;
+//     text-align: center;
+//     text-transform: capitalize;
+//     color: $white;
+// }
+
+// .works-portfolio:hover::after {
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     top: 0px;
+//     left: 0px;
+//     display: block;
+//     background-color: rgba(255, 67, 67, 0.8);
+//     position: absolute;
+//     z-index: 4;
+//     transition: 0.8s;
+//     opacity: 1;
+// }
+
+// .works-portfolio:hover {
+//     .works-portfolio--hover {
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//         z-index: 5;
+//     }
+// }
+
+
+.works {
+    // display: none;
+    padding: 0;
+}
+
+.works-wrap {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.works-portfolio {
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+    transition: 0.5s;
+    border: 1px solid $white;
+
+    @media (max-width: 1024px) {
+        width: 33.3%;
+    }
+
+    @media (max-width: 650px) {
+        width: 50%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &:hover::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        display: block;
+        background-color: rgba(255, 67, 67, 0.8);
+        position: absolute;
+        opacity: 1;
+    }
+
+    &:hover::after {
+        content: "Project name";
+        top: 0px;
+        left: 0px;
+        display: block;
+        padding-top: 30%;
+        font-family: 'Raleway';
+        font-weight: 900;
+        font-size: $_24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+
+        @media (max-width: 750px) {
+            font-size: $_18px;
+            line-height: 21px;
+        }
+    }
+
+    &:hover::before {
+        content: "User Interface Design";
+        top: 56%;
+        left: 25%;
+        display: block;
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: $_18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $white;
+        position: absolute;
+        z-index: 11;
+
+        @media (max-width: 1170px) {
+            left: 18%;
+        }
+
+        @media (max-width: 1070px) {
+            left: 16%;
+        }
+
+        @media (max-width: 1024px) {
+            left: 24%;
+        }
+
+        @media (max-width: 980px) {
+            left: 23%;
+        }
+
+        @media (max-width: 900px) {
+            left: 20%;
+        }
+
+        @media (max-width: 850px) {
+            left: 18%;
+        }
+
+        @media (max-width: 800px) {
+            left: 16%;
+        }
+
+        @media (max-width: 750px) {
+            left: 22%;
+            font-size: $_14px;
+            line-height: 16px
+        }
+
+        @media (max-width: 700px) {
+            left: 20%;
+        }
+
+        @media (max-width: 650px) {
+            left: 28%;
+        }
+
+        @media (max-width: 600px) {
+            left: 27%;
+        }
+
+        @media (max-width: 550px) {
+            left: 25%;
+        }
+
+        @media (max-width: 500px) {
+            left: 23%;
+        }
+
+        @media (max-width: 450px) {
+            left: 21%;
+        }
+
+        @media (max-width: 430px) {
+            left: 19%;
+        }
+
+        @media (max-width: 410px) {
+            left: 17%;
+        }
+
+        @media (max-width: 390px) {
+            left: 15%;
+        }
+
+        @media (max-width: 370px) {
+            left: 13%;
+        }
+
+        @media (max-width: 350px) {
+            left: 11%;
+            font-size: $_13px;
+            line-height: 15px
+        }
+
+        @media (max-width: 330px) {
+            left: 9%;
+        }
+    }
+}
+
+
+.works-img--1 {}
+
+.works-img--2 {}
+
+.works-img--3 {}
+
+.works-img--4 {}
+
+.works-img--5 {
+    @media (max-width: 650px) {
+        display: none;
+    }
+}
+
+.works-img--6 {
+    @media (max-width: 650px) {
+        display: none;
+    }
+}
+
+.works-img--7 {
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.works-img--8 {
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}

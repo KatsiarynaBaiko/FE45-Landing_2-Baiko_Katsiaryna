@@ -1,0 +1,211 @@
+@mixin flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+
+//header
+
+@mixin flex-beetwen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin navigation-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin navigation-list--a {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: $_13px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+}
+
+// main
+
+@mixin h1 {
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: $_64px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    display: block;
+}
+
+@mixin main-text {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: $_24px;
+    line-height: 28px;
+    text-align: center;
+    color: $white;
+}
+
+@mixin button-link {
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: $_24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $red;
+    border: none;
+    display: block;
+    margin: auto;
+    width: 370px;
+    padding: 27px 0;
+    transition: 0.5s;
+}
+
+@mixin button-link--hover {
+    background-color: $red_light;
+    color: $white;
+}
+
+@mixin button-link--active {
+    background-color: $red;
+    box-shadow: 4px 4px 30px rgba(255, 67, 67, 1);
+    color: $white;
+}
+
+//features
+
+@mixin icons {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@mixin icons-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+@mixin h3-Features {
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: $_24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black_h3;
+    margin-bottom: 43px;
+}
+
+@mixin text-grey {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: 21px;
+    color: $grey_text;
+}
+
+//team
+
+@mixin team-img-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@mixin h3-team {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: $_24px;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    color: $black_h3;
+    margin-bottom: 5px;
+}
+
+@mixin team-position {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: 21px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $red;
+    margin-bottom: 18px;
+}
+
+@mixin socialmedia-links {
+    font-size: $_18px;
+    color: $grey_socmedia;
+    padding: 10px 11px;
+    border: 1px solid #c6cbcd;
+}
+
+@mixin socialmedia-imemA {
+    width: 39px;
+    line-height: 39px;
+    display: block;
+    font-size: $_18px;
+    color: $grey_socmedia;
+    border: 1px solid $grey_socmedia;
+    transition: 0.3s;
+}
+
+// download
+
+@mixin download-text {
+    display: block;
+    margin: 0 auto 48px;
+}
+
+@mixin download-textP {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: $_18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+}
+
+//contacts
+
+@mixin h3-contacts {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: $_18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    display: block;
+}
+
+//footer
+
+@mixin footer-text {
+    line-height: 21px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: $_18px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $grey_footer;
+}
+

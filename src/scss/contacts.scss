@@ -1,0 +1,234 @@
+.contacts {
+    // display: none;
+    padding: 71px 0;
+    background-color: $blue_contacts;
+
+    @media (max-width: 1169px) {
+        padding: 50px 0;
+    }
+}
+
+.contacts-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+
+    @media (max-width: 929px) {
+        justify-content: space-around;
+    }
+
+    @media (max-width: 699px) {
+        justify-content: center;
+    }
+
+}
+
+.contacts-location {
+    width: 360px;
+    margin: 0 15px;
+
+    @media (max-width: 1169px) {
+        width: 340px;
+    }
+
+    @media (max-width: 1109px) {
+        width: 300px;
+    }
+
+    @media (max-width: 989px) {
+        width: 280px;
+    }
+
+    @media (max-width: 929px) {
+        width: 320px;
+        order: 1;
+    }
+
+    @media (max-width: 699px){
+        width: 320px;
+        order: 1;
+        margin-bottom: 70px;
+    }
+
+    @media (max-width: 400px){
+        width: 280px;
+    }
+}
+
+.contacts-locatio--title {
+    @include h3-contacts;
+    margin: 0 auto 29px;
+
+    @media (max-width: 1169px) {
+        font-size: $_14px;
+        line-height: 16px;
+        margin: 0 auto 17px;
+    }
+}
+
+.contacts-locatio--info {
+    display: block;
+    margin: auto;
+    & p {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: $_18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $white;   
+
+        @media (max-width: 1169px) {
+            font-size: $_14px;
+            line-height: 16px;
+        }
+    }
+}
+
+.contacts-socialmedia {
+    width: 360px;
+    margin: 0 15px;
+
+    @media (max-width: 1169px) {
+        width: 340px;
+    }
+
+    @media (max-width: 1109px) {
+        width: 300px;
+    }
+
+    @media (max-width: 989px) {
+        width: 280px;
+    }
+
+    @media (max-width: 929px) {
+        width: 320px;
+        order: 3;
+    }
+
+    @media (max-width: 699px){
+        width: 320px;
+        order: 2;
+        margin-bottom: 70px;
+    }
+
+    @media (max-width: 400px){
+        width: 280px;
+    }
+}
+
+.contacts-socialmedia--title {
+    @include h3-contacts;
+    margin: 0 auto 49px;
+
+    @media (max-width: 1169px) {
+        font-size: $_14px;
+        line-height: 16px;
+        margin: 0 auto 32px;
+    }
+}
+
+.contacts-socialmedia--links {
+    width: 170px;
+    margin: auto;
+    @include flex-beetwen;
+}
+
+// .contacts-socialmedia-links__item {
+// }
+
+.contacts-socialmedia-links__item a {
+    @include socialmedia-imemA;
+}
+
+.fa-brands {
+    transition: 0.3s;
+}
+
+.fa-brands:hover {
+    transform: scale(1.3);
+    color: $blue_socmedia;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+    color: $blue_socmedia;
+    background-color: $grey_socmedia;
+    border-radius: 10px;
+}
+
+.fa-facebook-f {
+    padding: 10px 11px 10px 13px;
+}
+
+.fa-twitter {
+    padding: 11px 12px 10px 9px;
+} 
+
+.fa-linkedin {
+    padding: 10px 10px 10px 10px;
+}
+
+.contacts-about {
+    width: 360px;
+    margin: 0 15px;
+
+    @media (max-width: 1169px) {
+        width: 340px;
+    }
+
+    @media (max-width: 1109px) {
+        width: 300px;
+    }
+
+    @media (max-width: 989px) {
+        width: 280px;
+    }
+
+    @media (max-width: 929px) {
+        width: 320px;
+        margin-bottom: 50px;
+        order: 2;
+    }
+
+    @media (max-width: 699px){
+        width: 320px;
+        order: 3;
+    }
+
+    @media (max-width: 400px){
+        width: 280px;
+    }
+}
+
+.contacts-about-title {
+    @include h3-contacts;
+    margin: 0 auto 29px;
+
+    @media (max-width: 1169px) {
+        font-size: $_14px;
+        line-height: 16px;
+        margin: 0 auto 17px;
+    }
+}
+
+.contacts-about-info {
+    display: block;
+    margin: auto;
+    & p {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: $_18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $white; 
+        @media (max-width: 1169px) {
+            font-size: $_14px;
+            line-height: 16px;
+        }
+    }
+}
+

@@ -1,0 +1,127 @@
+.features {
+    // display: none;
+}
+
+.features-wrap {
+    @include flex-wrap;
+    @media (max-width: 989px) {
+        justify-content: space-evenly;
+    }
+}
+
+.features-card {
+    width: 360px;
+    margin: 0 15px;
+
+    @media (max-width: 1169px) {
+        width: 330px;
+    }
+
+    @media (max-width: 1079px) {
+        width: 300px;
+    }
+
+    @media (max-width: 659px) {
+        width: 280px;
+    }
+
+    @media (max-width: 619px) {
+        width: 320px;
+        margin-bottom: 42px;
+    }
+
+    @media (max-width: 450px) {
+        width: 280px;
+        margin-bottom: 42px;
+    }
+    
+
+    &--first {
+        margin-bottom: 50px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 989px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &--second {
+        @media (max-width: 989px) {
+            margin-bottom: 40px;
+        }
+
+    }
+
+    &-img {
+        @include icons;
+
+        @media (max-width: 1024px) {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 24px;
+        }
+
+        @media (max-width: 619px) {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 24px;
+        }
+
+    }
+
+    &-title {
+        @include h3-Features;
+
+        @media (max-width: 1024px) {
+            font-size: $_18px;
+            line-height: 21px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 619px) {
+            margin-bottom: 18px;
+        }
+    }
+
+    &-description p {
+        @include text-grey;
+        text-align: center;
+
+        @media (max-width: 1024px) {
+            font-size: $_14px;
+            line-height: 16px;
+        }
+    }
+}
+
+
+.features-card-img img {
+        @include icons-img;
+}
+
+.features-card:last-child {
+    @media (max-width: 619px) {
+        margin-bottom: 0;
+    }
+}
+
+
+// .features-card--first {
+//     margin-bottom: 55px;
+// }
+
+// .features-card-img {
+//     @include icons;
+// }
+
+// .features-card-title {
+//     @include h3-Features;
+// }
+
+// .features-card-description p {
+//     @include text-grey;
+//     text-align: center;
+// }

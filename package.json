@@ -1,0 +1,25 @@
+{
+  "name": "fe45-landing_2-baiko_katsiaryna",
+  "version": "1.0.0",
+  "description": "Landing_2",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatsiarynaBaiko/FE45-Landing_2-Baiko_Katsiaryna.git"
+  },
+  "author": "Katsiaryna Baiko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatsiarynaBaiko/FE45-Landing_2-Baiko_Katsiaryna/issues"
+  },
+  "homepage": "https://github.com/KatsiarynaBaiko/FE45-Landing_2-Baiko_Katsiaryna#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}
